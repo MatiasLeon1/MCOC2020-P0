@@ -2,8 +2,45 @@
 
 #Mi computador
 
-* Procesador: AMD A8-7410 APU with AMD radeon R5 Graphics 2.20 GHz
-* Nucleos: 4
-* Procesadores logicos: 4
-* Memoria: 8 Gb   velocidad: 1855 MHz
-* 1 Disco duro
+* Marca/Modelo: Hp Pavilion 
+
+* Tipo: Notebook
+
+* Año Adquisición: 2020
+
+* Procesador:
+  * Marca/Modelo: AMD A8-7410 APU with AMD radeon R5 Graphics 2.20 GHz
+  * Velocidad Base: 2,20 GHz
+  * Velocidad Máxima: 2,40 GHz
+  * Nucleos: 4
+  * Procesadores logicos: 4
+  * Arquitectura: AMD64
+  * Set de instrucciones:----
+  
+  * Tamaño de las caches del procesador
+  * L1: 256 kB
+  * L2: 2,0 MB
+  
+ * Memoria
+  * Total: 8 Gb   
+  * Tipo de memoria: ---
+  * Velocidad: 1855 MHz
+  * Numero de (SO)DIMM: ---
+  
+ * Tarjeta Gráfica
+  * Marca/Modelo: AMD radeon R5 Graphics
+  * Memoria dedicada: 4568 MB
+  * Resolución: 1366 x 768 x 60 hericos
+  
+ * Disco
+  * Marca:(Unidades de disco estandar) Microsoft
+  * Tipo: Disco duro  
+  * Tamaño: 1TB
+  * Particiones: 4
+  * Sistema de archivos: NTFS
+ 
+ * Dirección MAC de la tarjeta wifi: C8-FF-28-F6-E7-2B
+ * Direccion IP (Interna del router): ---
+ * Direccion IP (Externa, del ISP): ---
+ * Proveedor internet: GTD Manquehue, fibra optica
+ 
