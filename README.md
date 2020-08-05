@@ -23,9 +23,9 @@
   
  * Memoria
   * Total: 8 Gb   
-  * Tipo de memoria: ---
+  * Tipo de memoria: DDR3
   * Velocidad: 1855 MHz
-  * Numero de (SO)DIMM: ---
+  * Numero de (SO)DIMM: 1 de 2 usadas
   
  * Tarjeta Gráfica
   * Marca/Modelo: AMD radeon R5 Graphics
@@ -40,7 +40,7 @@
   * Sistema de archivos: NTFS
  
  * Dirección MAC de la tarjeta wifi: C8-FF-28-F6-E7-2B
- * Direccion IP (Interna del router): ---
- * Direccion IP (Externa, del ISP): ---
+ * Direccion IP (Interna del router): 192.168.1.136
+ * Direccion IP (Externa, del ISP): 190.215.242.187
  * Proveedor internet: GTD Manquehue, fibra optica
  
