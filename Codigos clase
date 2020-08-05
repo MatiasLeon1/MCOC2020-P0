@@ -1,0 +1,31 @@
+import scipy as sp
+from time import perf_counter
+
+#1
+print("Hola Mundo.")
+
+#2
+Nombre= str("Matias Leon")
+Dia=5
+
+print(Nombre)
+print("Hola", Nombre,"hoy es",Dia,"de agosto")
+print(Nombre*7)
+
+#3
+N=4
+
+M1=sp.matrix(sp.rand(N,N))
+M2=sp.matrix(sp.rand(N,N))
+
+print(M1)
+print(M2)
+
+t1= perf_counter()
+M3= M1*M2
+t2= perf_counter()
+
+print(M3)
+
+dt= t2-t1
+print("Tiempo transcurrido=",dt,"segundos")
