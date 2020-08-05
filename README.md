@@ -15,7 +15,7 @@
   * Nucleos: 4
   * Procesadores logicos: 4
   * Arquitectura: AMD64
-  * Set de instrucciones:----
+  * Set de instrucciones: Intel SSE4.1, Intel SSE4,2, INtel AVX2
   
   * Tamaño de las caches del procesador
   * L1: 256 kB
