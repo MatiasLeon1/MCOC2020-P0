@@ -1,0 +1,151 @@
+from matplotlib import pyplot as plt
+
+# Iteracion 1
+archivo1= open("Iteracion_11","r") #Lo guarde como string
+archivo01=[]                       #Lo paso a float
+for i in archivo1:
+    archivo01.append(i)
+supr_arch1= archivo01[0]
+supr2_arch1=supr_arch1.strip("[").strip("]") #Remuevo "impurezas"
+pre1=supr2_arch1.split(", ") #Separo por coma y un espacio
+lista_final1=[float(x) for x in pre1] #Lo ingreso a una lista de puros float
+
+# Iteracion 2    
+archivo2= open("Iteracion_12","r")
+archivo02=[]
+for i in archivo2:
+    archivo02.append(i)
+supr_arch2= archivo02[0]
+supr2_arch2=supr_arch2.strip("[").strip("]")
+pre2=supr2_arch2.split(", ")
+lista_final2=[float(x) for x in pre2]
+
+# Iteracion 3
+archivo3= open("Iteracion_13","r")
+archivo03=[]
+for i in archivo3:
+    archivo03.append(i)
+supr_arch3= archivo03[0]
+supr2_arch3=supr_arch3.strip("[").strip("]")
+pre3=supr2_arch3.split(", ")
+lista_final3=[float(x) for x in pre3]
+
+# Iteracion 4
+archivo4= open("Iteracion_14","r")
+archivo04=[]
+for i in archivo4:
+    archivo04.append(i)
+supr_arch4= archivo04[0]
+supr2_arch4=supr_arch4.strip("[").strip("]")
+pre4=supr2_arch4.split(", ")
+lista_final4=[float(x) for x in pre4]
+
+# Iteracion 5
+archivo5= open("Iteracion_15","r")
+archivo05=[]
+for i in archivo5:
+    archivo05.append(i)
+supr_arch5= archivo05[0]
+supr2_arch5=supr_arch5.strip("[").strip("]")
+pre5=supr2_arch5.split(", ")
+lista_final5=[float(x) for x in pre5]
+
+# Iteracion 6
+archivo6= open("Iteracion_16","r")
+archivo06=[]
+for i in archivo6:
+    archivo06.append(i)
+supr_arch6= archivo06[0]
+supr2_arch6=supr_arch6.strip("[").strip("]")
+pre6=supr2_arch6.split(", ")
+lista_final6=[float(x) for x in pre6]
+
+# Iteracion 7
+archivo7= open("Iteracion_17","r")
+archivo07=[]
+for i in archivo7:
+    archivo07.append(i)
+supr_arch7= archivo07[0]
+supr2_arch7=supr_arch7.strip("[").strip("]")
+pre7=supr2_arch7.split(", ")
+lista_final7=[float(x) for x in pre7]
+
+# Iteracion 8
+archivo8= open("Iteracion_18","r")
+archivo08=[]
+for i in archivo8:
+    archivo08.append(i)
+supr_arch8= archivo08[0]
+supr2_arch8=supr_arch8.strip("[").strip("]")
+pre8=supr2_arch8.split(", ")
+lista_final8=[float(x) for x in pre8]
+
+# Iteracion 9
+archivo9= open("Iteracion_19","r")
+archivo09=[]
+for i in archivo9:
+    archivo09.append(i)
+supr_arch9= archivo09[0]
+supr2_arch9=supr_arch9.strip("[").strip("]")
+pre9=supr2_arch9.split(", ")
+lista_final9=[float(x) for x in pre9]
+
+# Iteracion 10
+archivo11= open("Iteracion_111","r")
+archivo011=[]
+for i in archivo11:
+    archivo011.append(i)
+supr_arch11= archivo011[0]
+supr2_arch11=supr_arch11.strip("[").strip("]")
+pre11=supr2_arch11.split(", ")
+lista_final11=[float(x) for x in pre11]
+
+archivo_memoria=open("Memoria_N","r")
+archivoM=[]
+for i in archivo_memoria:
+    archivoM.append(i)
+supr_archM= archivoM[0]
+supr2_archM=supr_archM.strip("[").strip("]")
+preM=supr2_archM.split(", ")
+lista_finalM=[int(x) for x in preM]
+
+#Tricks para dejarlo IDENTICO al del profesor
+NN = [2,5,10,12,15,20,25,30,40,50,60,70,80,90,100,200,300,400,500,600,800,1000,2000,2500,5000,7500,10000]
+X=[10,20,50,100,200,500,1000,2000,5000,10000,20000]
+x_label=["10","20","50","100","200","500","1000","2000","5000","10000","20000"]
+Y=[0.1e-3,1e-3,1e-2,0.1,1,10,60,60*10]
+y_label=["0.1 ms","1 ms","10 ms","0,1 s","1 s","10 s", "1 min","10 min"]
+
+
+    
+#Grafico tiempo
+plt.figure()
+plt.subplot(2,1,1)
+plt.loglog(NN,lista_final1, marker = "o")
+plt.loglog(NN,lista_final2, marker = "o")
+plt.loglog(NN,lista_final3, marker = "o")
+plt.loglog(NN,lista_final4, marker = "o")
+plt.loglog(NN,lista_final5, marker = "o")
+plt.loglog(NN,lista_final6, marker = "o")
+plt.loglog(NN,lista_final7, marker = "o")
+plt.loglog(NN,lista_final8, marker = "o")
+plt.loglog(NN,lista_final9, marker = "o")
+plt.loglog(NN,lista_final11, marker = "o")
+plt.yticks(Y,y_label)
+plt.title("Rendimiendo A@B")
+plt.ylabel("Tiempo transcurrido (s)")
+plt.grid()
+plt.xticks(X,[ ]) #Elimino los valores dle eje x en el grafico 1
+
+#Grafico memoria
+plt.subplot(2,1,2)
+Y2=[10**3,10**4,10**5,10**6,10**7,10**8,10**9,10**10]
+y2=["1 KB","10 KB","100 KB","1 MB","10 MB","100 MB","1 GB","10 GB"]
+plt.loglog(NN,lista_finalM, marker="o")
+plt.xticks(X,x_label,rotation=45)
+plt.xlabel("Tamaño matriz N")
+plt.ylabel("Uso memoria (s)")
+plt.yticks(Y2,y2)
+plt.axhline(y=2400000000, xmin=0.001, xmax=0.9999,color="black",ls="--")
+plt.grid()
+plt.show()
