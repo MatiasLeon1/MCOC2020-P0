@@ -44,3 +44,15 @@
  * Direccion IP (Externa, del ISP): 190.215.242.187
  * Proveedor internet: GTD Manquehue, fibra optica
  
+ * DESEMPEÑO MATMUL
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
