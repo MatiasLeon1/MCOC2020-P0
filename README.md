@@ -72,6 +72,8 @@
     - Se utilizan 4 procesadores. Lo revise con el comando import multiprocessing, print(multiprocessing.cpu_count())
      Retorno: 4
      Imagen de uso de procesador durante corrida de iteracion 1:
+     ![image](https://user-images.githubusercontent.com/43649125/89685924-4d982a00-d8cb-11ea-9416-173a766f889c.png)
+
     
  
  
