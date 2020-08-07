@@ -1,6 +1,6 @@
-# MCOC2020-P0
+## MCOC2020-P0
 
-#Mi computador
+## Mi computador
 
 * Marca/Modelo: Hp Pavilion 
 
@@ -44,8 +44,12 @@
  * Direccion IP (Externa, del ISP): 190.215.242.187
  * Proveedor internet: GTD Manquehue, fibra optica
  
- * DESEMPEÑO MATMUL
+  ## DESEMPEÑO MATMUL
  
+ ![image](https://user-images.githubusercontent.com/43649125/89683457-926d9200-d8c6-11ea-8797-fda0481dc760.png)
+
+
+ * Preguntas:
  
  
  
