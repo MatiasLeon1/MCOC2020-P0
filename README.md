@@ -66,7 +66,7 @@
      
      
    ## Desempeño MIMATMUL
-   *Debido a un tema de tiempo, el programa fue ejecutado y graficado hasta la matriz de tamaño 500x500. Superior a esta el tiempo de ejecucion se disparaba ridiculamente. Se adjunta imagen a continuacion como respaldo a la enviada a Canvas.
+   * Debido a un tema de tiempo, el programa fue ejecutado y graficado hasta la matriz de tamaño 500x500. Superior a esta el tiempo de ejecucion se disparaba ridiculamente. Se adjunta imagen a continuacion como respaldo a la enviada a Canvas.
    ![matmul1](https://user-images.githubusercontent.com/43649125/89786356-cbd21780-dae9-11ea-8632-bd4c538d3935.png)
 
 
