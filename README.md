@@ -63,6 +63,12 @@
   * ¿Durante la ejecución de su codigo, se utiliza mas de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar.
     - Se utilizan 4 procesadores. Lo revise con el comando import multiprocessing, print(multiprocessing.cpu_count()). El retorno fue 4. A continuacion se adjunta una imagen correspondiente al uso del procesador durante corrida de iteracion 1:
      ![image](https://user-images.githubusercontent.com/43649125/89685924-4d982a00-d8cb-11ea-9416-173a766f889c.png)
+     
+     
+   ## Desempeño MIMATMUL
+   
+   ![matmul1](https://user-images.githubusercontent.com/43649125/89786356-cbd21780-dae9-11ea-8632-bd4c538d3935.png)
+
 
     
  
