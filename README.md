@@ -1,7 +1,7 @@
-### MCOC2020-P0
+# MCOC2020-P0
 
-## Mi computador
-# Entrega 1
+## Entrega 1
+### Mi computador
 
 * Marca/Modelo: Hp Pavilion 
 
@@ -45,7 +45,8 @@
  * Direccion IP (Externa, del ISP): 190.215.242.187
  * Proveedor internet: GTD Manquehue, fibra optica
  
-  ## DESEMPEÑO MATMUL
+ ## Entrega 2
+ ### DESEMPEÑO MATMUL
  
  ![image](https://user-images.githubusercontent.com/43649125/89683457-926d9200-d8c6-11ea-8797-fda0481dc760.png)
 
@@ -66,11 +67,20 @@
      ![image](https://user-images.githubusercontent.com/43649125/89685924-4d982a00-d8cb-11ea-9416-173a766f889c.png)
      
      
-   ## Desempeño MIMATMUL
+   ## Entrega 3
+   ### Desempeño MIMATMUL
    * Debido a un tema de tiempo, el programa fue ejecutado y graficado hasta la matriz de tamaño 500x500. Superior a esta el tiempo de ejecucion se disparaba ridiculamente. Se adjunta imagen a continuacion como respaldo a la enviada a Canvas.
    ![matmul1](https://user-images.githubusercontent.com/43649125/89786356-cbd21780-dae9-11ea-8632-bd4c538d3935.png)
 
-
+   ## Entrega 4
+   * Tamaños de memoria
+    * np.half --> 16 bits
+    * np.simple --> 32 bits
+    * np.double --> 64 bits
+    * np.longdouble --> 128 bits
+   * ¿Qué algoritmo de inversión cree que utiliza cada método?
+     *
+   
     
  
  
