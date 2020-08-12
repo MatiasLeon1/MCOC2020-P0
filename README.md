@@ -1,7 +1,7 @@
-## MCOC2020-P0
+### MCOC2020-P0
 
 ## Mi computador
-#Entrega 1
+# Entrega 1
 
 * Marca/Modelo: Hp Pavilion 
 
