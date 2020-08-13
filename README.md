@@ -80,7 +80,13 @@
      * np.longdouble --> 128 bits
      
    * Graficos:
-   
+   ![Desempeño_NPHALF](https://user-images.githubusercontent.com/43649125/90087130-04d8da80-dcea-11ea-9a7e-d5b381c31e0f.png)
+
+   ![Desempeño_NPSIMPLE](https://user-images.githubusercontent.com/43649125/90087140-0acebb80-dcea-11ea-9d7b-e374463d84db.png)
+
+   ![Desempeño_NPDOUBLE](https://user-images.githubusercontent.com/43649125/90087149-0efad900-dcea-11ea-85a4-c00f3d425d79.png)
+
+   ![Desempeño_NPLONGDOUBLE](https://user-images.githubusercontent.com/43649125/90087158-11f5c980-dcea-11ea-9fda-a6fa277d85e9.png)
    * ¿Qué algoritmo de inversión cree que utiliza cada método?
      * Tanto para el caso de numpy como scipy creo que utiliza el metodo de la matriz de identidad. Ahora la rapidez con la que lo realiza varia para cada caso desde mi punto de vista. En base a lo visto 
    
