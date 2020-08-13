@@ -33,7 +33,9 @@ def Matriz_Laplaciana(N, dtype=np.half):
                 A[i,j]= -1
     
     return A
-   
+
+#NO PUDE TRABAJAR NP.LINALG.INV NI CON NP.HALF NI CON NP.LONGDOUBLE
+#POR LO TANTO ME FALTARON 2 RECTAS DE 12
 
 DT21=[]   
 DT22=[]
