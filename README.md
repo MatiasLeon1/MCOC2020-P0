@@ -74,12 +74,12 @@
 
    ## Entrega 4
    * Tamaños de memoria
-    * np.half --> 16 bits
-    * np.simple --> 32 bits
-    * np.double --> 64 bits
-    * np.longdouble --> 128 bits
+     * np.half --> 16 bits
+     * np.simple --> 32 bits
+     * np.double --> 64 bits
+     * np.longdouble --> 128 bits
    * ¿Qué algoritmo de inversión cree que utiliza cada método?
-     *
+     * Para el caso del metodo de numpy.linalg creo que utiliza el metodo
    
     
  
