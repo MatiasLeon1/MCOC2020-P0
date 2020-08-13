@@ -78,8 +78,11 @@
      * np.simple --> 32 bits
      * np.double --> 64 bits
      * np.longdouble --> 128 bits
+     
+   * Graficos:
+   
    * ¿Qué algoritmo de inversión cree que utiliza cada método?
-     * Para el caso del metodo de numpy.linalg creo que utiliza el metodo
+     * Tanto para el caso de numpy como scipy creo que utiliza el metodo de la matriz de identidad. Ahora la rapidez con la que lo realiza varia para cada caso desde mi punto de vista. En base a lo visto 
    
     
  
