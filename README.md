@@ -80,15 +80,20 @@
      * np.longdouble --> 128 bits
      
    * Graficos:
+   
    ![Desempeño_NPHALF](https://user-images.githubusercontent.com/43649125/90087130-04d8da80-dcea-11ea-9a7e-d5b381c31e0f.png)
 
    ![Desempeño_NPSIMPLE](https://user-images.githubusercontent.com/43649125/90087140-0acebb80-dcea-11ea-9d7b-e374463d84db.png)
 
    ![Desempeño_NPDOUBLE](https://user-images.githubusercontent.com/43649125/90087149-0efad900-dcea-11ea-85a4-c00f3d425d79.png)
 
-   ![Desempeño_NPLONGDOUBLE](https://user-images.githubusercontent.com/43649125/90087158-11f5c980-dcea-11ea-9fda-a6fa277d85e9.png)
+   ![Desempeño_NPLONGDOUBLE](https://user-images.githubusercontent.com/43649125/90087343-84ff4000-dcea-11ea-8fc9-013a96cf892d.png)
+   
    * ¿Qué algoritmo de inversión cree que utiliza cada método?
-     * Tanto para el caso de numpy como scipy creo que utiliza el metodo de la matriz de identidad. Ahora la rapidez con la que lo realiza varia para cada caso desde mi punto de vista. En base a lo visto 
+     * Tanto para el caso de numpy como scipy creo que utiliza el metodo de la matriz de identidad. Ahora la rapidez con la que lo realiza varia para cada caso desde mi punto de vista. En base a lo visto en los graficos generados, scipy es evidentemente mas veloz que numpy. Esto se debe a que numpy realiza la inversion transformando la matriz a identidad y luego generando el cambio. Scipy en cambio, utiliza el metodo de conectividad algebraica. A medida que los numeros se hacen mas pequeños adquiriendo una mas modular y haciendo posible el denominado salto espectral, que se traduce en un calculo mas veloz basado en la sincronizacion maximja utilizando el valor mas alto posible.
+     
+   * ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso?.
+     * La capacidad de realizar acciones en paralelo junto con la jerarquia de cache en mi PC se traducen en distintas velocidades de procesamiento. Podemos observqar que el procesamiento en mi L1 es veloz pero se satura rapidamente debido a su baja capacidad. L2 sin embargo al ser mas grande se traduce en una evidente disminucion del tiempo de ejecucion pero que sin embargo es copada rapidamente. Finalmente se da paso a la memoria RAM la cual eleva los tiempos de procesamiento considerablemente. Si bien mi computador no es malo se evidencia que no esta pensado para entregar una velocidad importante al momento de buscar efectividad y optimizar tiempo.
    
     
  
