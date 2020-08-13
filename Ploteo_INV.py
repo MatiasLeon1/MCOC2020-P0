@@ -115,6 +115,7 @@ y_label=["0.1 ms","1 ms","10 ms","0,1 s","1 s","10 s", "1 min","10 min"]
 plt.figure()
 plt.subplot(2,1,1)
 #plt.loglog(N,DT_NP3F, marker = "o", label = "Numpy.linalg")        #Voy cambiando
+#EJEMPLO DE COMO NO PLOTEO LOS NP QUE NO PUDE TRABAJAR
 plt.loglog(N,DT_SCF3F, marker = "o", label="Scipy.linalg False")    #variables
 plt.loglog(N,DT_SCT3F, marker = "o", label="Scipy.linalg True")     #a medida
 plt.legend(loc="upper left")                                        #que grafico
