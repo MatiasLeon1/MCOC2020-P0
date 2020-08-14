@@ -1,0 +1,76 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Aug 14 10:36:57 2020
+
+@author: Matias
+"""
+
+import numpy as np
+from time import perf_counter
+
+N=[
+   2,4,5,10,
+   12, 15,18, 20,
+   30, 40, 45, 50, 55,
+   60, 75, 100,
+   125, 160, 200,
+   250, 350, 500, 600, 800,
+   1000, 2000, 5000, 10000]
+
+
+def Matriz_Laplaciana(N, dtype=np.single):
+    A= np.zeros([N,N], dtype=dtype)
+    
+    for i in range(N):
+        for j in range(N):
+            if i == j:
+                A[i,j]= 2
+            if i+1 == j:
+                A[i,j]= -1
+            if i-1 == j:
+                A[i,j]= -1
+    
+    return A
+
+Corridas=10
+
+nombres=["Ainv_X_B-2.txt","Ainv_X_npSolve-2.txt"]
+
+archivos=[open(nombre,"w") for nombre in nombres]
+
+for n in N:
+    DT=np.zeros((Corridas, len(archivos))) #Lista vacia donde iran los dt    
+    
+    for i in range(Corridas):
+        
+        #INVIRTIENDO
+        A=Matriz_Laplaciana(n)
+        B=np.ones(n)
+        t01=perf_counter()
+        Inv_A=np.linalg.inv(A)
+        Inv_AxB=A@B
+        t02=perf_counter()
+        dt=t02-t01
+        DT[i][0]=dt
+        
+        #NP.LINALG.SOLVE
+        A=Matriz_Laplaciana(n)
+        B=np.ones(n)
+        t11=perf_counter()
+        Inv_AxB=np.linalg.solve(A,B)
+        t22=perf_counter()
+        dt1=t22-t11
+        DT[i][1]=dt1
+    
+    print(f"dt's: {DT}")
+        
+    DT_promedio= [np.mean(DT[:,j]) for j in range(len(archivos))]
+    #DT_promedio= np.mean(DT, axis=0)
+    print(f"Promedio: {DT_promedio}")
+    
+    #Escritura en archivos
+    for j in range(len(archivos)):
+        archivos[j].write(f"{n} {DT_promedio[j]}\n")
+        archivos[j].flush()
+
+[archivo.close() for archivo in archivos]
