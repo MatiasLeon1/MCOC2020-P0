@@ -32,16 +32,16 @@
 
 ## Codigo Ensamblaje Matriz
 
-   **def** *Matriz_Laplaciana_Llena*(N, dtype=np.double):
-    A= np.zeros([N,N], dtype=dtype)
+   `def Matriz_Laplaciana_Llena(N, dtype=np.double):
+      A= np.zeros([N,N], dtype=dtype)
     
-   **for** i in *range*(N):
-        **for** j in *range*(N):
-            **if** i == j:
-                A[i,j]= 2
-            **if** i+1 == j:
-                A[i,j]= -1
-            **if** i-1 == j:
-                A[i,j]= -1
+      for i in range(N):
+            for j in range(N):
+               if i == j:
+                  A[i,j]= 2
+               if i+1 == j:
+                  A[i,j]= -1
+               if i-1 == j:
+                  A[i,j]= -1
     
-   **return** A
+    return A
