@@ -21,4 +21,4 @@
 ## Analisis
 * Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
    * Como se mencionó en clases, optimizar el codigo es necesario y debe ser un objetivo a perseguir constantemente. El ejemplo de la matriz Laplaciana dispersa sirve mucho para contextualizar que sucede cuando quitamos estos datos "innecesarios" (los ceros en este caso). Se observa en los 3 casos que el tiempo de cálculo de la matriz Laplaciana dispersa es muy inferior al de la matriz Laplaciana llena. En el caso de ensamblaje los tiempos son muy similares ya que a partir de la matriz Laplaciana llena yo cree una dispersa, por lo que en primer lugar se tuvo que crear la matriz con todos los ceros y posteriormente removerlos. Lo anterior no corresponde a lo que uno esperaria en un codigo "optimizado", sin embargos me vi envuelto en una dificultad al momento de trabajar con lil_matrix.
-* ¿Cual parece la complejidad asintótica (para LaTeX: N\rightarrow\inftyN → ∞)  para el ensamblado y solución en ambos casos y porqué?
+* ¿Cual parece la complejidad asintótica (N → ∞)  para el ensamblado y solución en ambos casos y porqué?
