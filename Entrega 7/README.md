@@ -29,3 +29,18 @@
    * En casi todos los casos, a mayor N mayor tiempo de solución y ensamblado. Lo cual posee una concordancia lógica, pues se está aumentando el tamaño de la variable a trabajar por parte del PC
 * ¿Qué tan estables son las corridas (se parecen todas entre sí siempre, nunca, en un rango)?
    * Las corridas fueron increíblemente estables, si consideramos las entregas anteriores donde se apreciaba una variación más notoria. Interesante es el hecho de poder observar claramente cuando la cache de mi computador pasa de L1 a L2, donde se logra apreciar un salto en las corridas. A medida que N aumenta la estabilidad crece, en parte porque la diferencia se vuelve poco apreciable en valores tan grandes. En valores de N chicos, se puede apreciar más claro esto debido a lo pequeños que son los límites. Si se pudiera hacer un zoom grande al gráfico se podría observar de mejor manera cómo varían las corridas entre sí.
+
+## Codigo Ensamblaje Matriz
+   **def** Matriz_Laplaciana_Llena(N, dtype=np.double):
+    A= np.zeros([N,N], dtype=dtype)
+    
+    **for** i in range(N):
+        **for** j in range(N):
+            **if** i == j:
+                A[i,j]= 2
+            **if** i+1 == j:
+                A[i,j]= -1
+            **if** i-1 == j:
+                A[i,j]= -1
+    
+    return A
