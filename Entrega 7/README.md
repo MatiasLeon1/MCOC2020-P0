@@ -32,7 +32,7 @@
 
 ## Codigo Ensamblaje Matriz
 
-   `def Matriz_Laplaciana_Llena(N, dtype=np.double):
+    def Matriz_Laplaciana_Llena(N, dtype=np.double):
       A= np.zeros([N,N], dtype=dtype)
     
       for i in range(N):
@@ -45,3 +45,5 @@
                   A[i,j]= -1
     
     return A
+    
+   Utilizar este codigo para las matrices Laplacianas llenas fue bastante util debido a su comodidad. Sin embargo, haber utilizado este codigo y transformar la matriz a dispersa utilizando `csr_matrix` demostro no ser optimo al momento de ensamblar las matrices.
